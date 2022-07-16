@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-f9b58c64\",\"path\":\"/css/Grid.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{\"sidebar\":\"auto\"},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"基本概念\",\"slug\":\"基本概念\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"css/Grid.md\"}")

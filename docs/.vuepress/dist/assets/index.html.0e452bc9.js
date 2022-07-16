@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"","lang":"en-US","frontmatter":{"home":true,"heroImage":"/pen.svg","heroText":"HomePage","tagline":"welcome here","actions":[{"text":"List","link":"/home/"}],"footer":"MIT Licensed | Copyright \xA9 2022-DjyCoder Blogs"},"excerpt":"","headers":[],"git":{},"filePathRelative":"README.md"}');export{e as data};
