@@ -27,7 +27,11 @@
 [ES6+](/js/ES6/)
 
 ## nodeJS
-[node](node.md)
+[node基础](node/node.md)
+
+[express](node/express.md)
+
+[koa](node/koa.md)
 
 ## vite
 [深入浅出vite笔记](vite.md)
@@ -38,12 +42,22 @@
 ## TS
 [ts](ts.md)
 
+## vue
+[Object.defineProperty和Proxy](vue/响应式原理.md)
+
+[pinia](vue/pinia.md)
+
 ## React
 [coderwhy-react](react1.md)
 
+[Mobx](Mobx.md)
+
+
+## 数据库
+[数据库](sql/mysql.md)
+
 ## 八股文
 [http](http.md)
+
 [面试](八股文面试.md)
 
-## vue
-[Object.defineProperty和Proxy](vue/响应式原理.md)

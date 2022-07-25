@@ -5,8 +5,8 @@ export const pagesData = {
   "v-0674a278": () => import(/* webpackChunkName: "v-0674a278" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/http.html.js").then(({ data }) => data),
   // path: /js.html
   "v-18508c17": () => import(/* webpackChunkName: "v-18508c17" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/js.html.js").then(({ data }) => data),
-  // path: /node.html
-  "v-1780593e": () => import(/* webpackChunkName: "v-1780593e" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/node.html.js").then(({ data }) => data),
+  // path: /Mobx.html
+  "v-9d64b130": () => import(/* webpackChunkName: "v-9d64b130" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/Mobx.html.js").then(({ data }) => data),
   // path: /react1.html
   "v-eb9e4624": () => import(/* webpackChunkName: "v-eb9e4624" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/react1.html.js").then(({ data }) => data),
   // path: /
@@ -41,6 +41,16 @@ export const pagesData = {
   "v-4b3e65a8": () => import(/* webpackChunkName: "v-4b3e65a8" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/js/防抖和节流.html.js").then(({ data }) => data),
   // path: /js/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html
   "v-43a0dbc3": () => import(/* webpackChunkName: "v-43a0dbc3" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/js/面向对象.html.js").then(({ data }) => data),
+  // path: /node/express.html
+  "v-525bec7d": () => import(/* webpackChunkName: "v-525bec7d" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/node/express.html.js").then(({ data }) => data),
+  // path: /node/koa.html
+  "v-2668f2e0": () => import(/* webpackChunkName: "v-2668f2e0" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/node/koa.html.js").then(({ data }) => data),
+  // path: /node/node.html
+  "v-62c92783": () => import(/* webpackChunkName: "v-62c92783" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/node/node.html.js").then(({ data }) => data),
+  // path: /sql/mysql.html
+  "v-62556791": () => import(/* webpackChunkName: "v-62556791" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/sql/mysql.html.js").then(({ data }) => data),
+  // path: /vue/pinia.html
+  "v-6357b2ee": () => import(/* webpackChunkName: "v-6357b2ee" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/vue/pinia.html.js").then(({ data }) => data),
   // path: /vue/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86.html
   "v-ec46784c": () => import(/* webpackChunkName: "v-ec46784c" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/vue/响应式原理.html.js").then(({ data }) => data),
   // path: /404.html
