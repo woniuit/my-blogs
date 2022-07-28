@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-acfd2baa\",\"path\":\"/canvas/canvas%E5%9F%BA%E7%A1%80.html\",\"title\":\"canvas\",\"lang\":\"en-US\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"canvas/canvas基础.md\"}")

@@ -7,5 +7,5 @@ tagline: welcome here
 actions:
   - text: List
     link: /home/
-footer: MIT Licensed | Copyright © 2022-DjyCoder Blogs
+footer: 我的博客 | 我说了算  © 2022-DjyCoder Blogs
 ---
