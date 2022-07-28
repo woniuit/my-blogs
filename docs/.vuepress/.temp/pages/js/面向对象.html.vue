@@ -486,5 +486,5 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <h3 id="isprototypeof" tabindex="-1"><a class="header-anchor" href="#isprototypeof" aria-hidden="true">#</a> isPrototypeOf</h3>
 <p>用于检测某个对象，是否出现在某个实例对象的原型链上</p>
 <h2 id="class" tabindex="-1"><a class="header-anchor" href="#class" aria-hidden="true">#</a> class</h2>
-<p><RouterLink to="/js/class/">class</RouterLink></p>
+<p><a href="/js/class/" target="_blank" rel="noopener noreferrer">class<ExternalLinkIcon/></a></p>
 </div></template>
