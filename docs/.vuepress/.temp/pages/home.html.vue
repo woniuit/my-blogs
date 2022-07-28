@@ -32,49 +32,49 @@
 </ul>
 <h2 id="ts" tabindex="-1"><a class="header-anchor" href="#ts" aria-hidden="true">#</a> TS~</h2>
 <ul>
-<li><RouterLink to="/dist/ts.html">ts</RouterLink></li>
+<li><RouterLink to="/ts.html">ts</RouterLink></li>
 </ul>
 <h2 id="vue" tabindex="-1"><a class="header-anchor" href="#vue" aria-hidden="true">#</a> vue~</h2>
 <ul>
 <li>
-<p><RouterLink to="/dist/vue/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86.html">Object.defineProperty和Proxy</RouterLink></p>
+<p><RouterLink to="/vue/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86.html">Object.defineProperty和Proxy</RouterLink></p>
 </li>
 <li>
-<p><RouterLink to="/dist/vue/pinia.html">pinia</RouterLink></p>
+<p><RouterLink to="/vue/pinia.html">pinia</RouterLink></p>
 </li>
 </ul>
 <h2 id="react" tabindex="-1"><a class="header-anchor" href="#react" aria-hidden="true">#</a> React~</h2>
 <ul>
-<li><RouterLink to="/dist/react/mobx.html">Mobx</RouterLink></li>
+<li><RouterLink to="/react/mobx.html">Mobx</RouterLink></li>
 </ul>
 <h2 id="nodejs" tabindex="-1"><a class="header-anchor" href="#nodejs" aria-hidden="true">#</a> nodeJS~</h2>
 <ul>
 <li>
-<p><RouterLink to="/dist/node/node.html">node基础</RouterLink></p>
+<p><RouterLink to="/node/node.html">node基础</RouterLink></p>
 </li>
 <li>
-<p><RouterLink to="/dist/node/express.html">express</RouterLink></p>
+<p><RouterLink to="/node/express.html">express</RouterLink></p>
 </li>
 <li>
-<p><RouterLink to="/dist/node/koa.html">koa</RouterLink></p>
+<p><RouterLink to="/node/koa.html">koa</RouterLink></p>
 </li>
 </ul>
 <h2 id="构建工具" tabindex="-1"><a class="header-anchor" href="#构建工具" aria-hidden="true">#</a> 构建工具~</h2>
 <ul>
-<li><RouterLink to="/dist/vite.html">vite</RouterLink></li>
-<li><RouterLink to="/dist/webpack.html">webpack</RouterLink></li>
+<li><RouterLink to="/vite.html">vite</RouterLink></li>
+<li><RouterLink to="/webpack.html">webpack</RouterLink></li>
 </ul>
 <h2 id="数据库" tabindex="-1"><a class="header-anchor" href="#数据库" aria-hidden="true">#</a> 数据库~</h2>
 <ul>
-<li><RouterLink to="/dist/sql/sql.html">数据库</RouterLink></li>
+<li><RouterLink to="/sql/sql.html">数据库</RouterLink></li>
 </ul>
 <h2 id="计算机网络相关" tabindex="-1"><a class="header-anchor" href="#计算机网络相关" aria-hidden="true">#</a> 计算机网络相关~</h2>
 <ul>
 <li>
-<p><RouterLink to="/dist/http.html">http</RouterLink></p>
+<p><RouterLink to="/http.html">http</RouterLink></p>
 </li>
 <li>
-<p><RouterLink to="/dist/%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95.html">面试</RouterLink></p>
+<p><RouterLink to="/%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95.html">面试</RouterLink></p>
 </li>
 </ul>
 </div></template>
