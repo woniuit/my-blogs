@@ -17,6 +17,8 @@ export const pagesComponents = {
   "v-62483f05": defineAsyncComponent(() => import(/* webpackChunkName: "v-62483f05" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/webpack.html.vue")),
   // path: /%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95.html
   "v-da6e3782": defineAsyncComponent(() => import(/* webpackChunkName: "v-da6e3782" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/八股文面试.html.vue")),
+  // path: /%E9%9D%99%E6%80%81%E9%83%A8%E7%BD%B2.html
+  "v-19d2ec67": defineAsyncComponent(() => import(/* webpackChunkName: "v-19d2ec67" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/静态部署.html.vue")),
   // path: /canvas/canvas%E5%9F%BA%E7%A1%80.html
   "v-acfd2baa": defineAsyncComponent(() => import(/* webpackChunkName: "v-acfd2baa" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/canvas/canvas基础.html.vue")),
   // path: /css/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html
@@ -47,8 +49,16 @@ export const pagesComponents = {
   "v-2668f2e0": defineAsyncComponent(() => import(/* webpackChunkName: "v-2668f2e0" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/node/koa.html.vue")),
   // path: /node/node.html
   "v-62c92783": defineAsyncComponent(() => import(/* webpackChunkName: "v-62c92783" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/node/node.html.vue")),
+  // path: /node/package.json.html
+  "v-3190f696": defineAsyncComponent(() => import(/* webpackChunkName: "v-3190f696" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/node/package.json.html.vue")),
+  // path: /react/hooks.html
+  "v-2e4c22b2": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e4c22b2" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/hooks.html.vue")),
   // path: /react/mobx.html
   "v-43744c90": defineAsyncComponent(() => import(/* webpackChunkName: "v-43744c90" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/mobx.html.vue")),
+  // path: /react/react%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html
+  "v-a531d592": defineAsyncComponent(() => import(/* webpackChunkName: "v-a531d592" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/react组件通信.html.vue")),
+  // path: /react/%E8%B7%AF%E7%94%B1.html
+  "v-f5813ea6": defineAsyncComponent(() => import(/* webpackChunkName: "v-f5813ea6" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/路由.html.vue")),
   // path: /sql/sql.html
   "v-57d98465": defineAsyncComponent(() => import(/* webpackChunkName: "v-57d98465" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/sql/sql.html.vue")),
   // path: /vue/pinia.html

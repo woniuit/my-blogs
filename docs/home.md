@@ -19,6 +19,8 @@
 
 - [ES6+](/js/ES6/)
 
+- [数组重用的方法]()
+
 ## TS~
 - [ts](ts.md)
 
@@ -29,6 +31,12 @@
 
 ## React~
 - [Mobx](react/mobx.md)
+  
+- [组件](react/react组件通信.md)
+  
+- [hooks](react/hooks.md)
+  
+- [路由](react/路由.md)
 
 ## nodeJS~
 - [node基础](node/node.md)
@@ -36,9 +44,12 @@
 - [express](node/express.md)
 
 - [koa](node/koa.md)
+  
+- [package.json和package-lock.json](node/package.json.md)
 
 ## 构建工具~
 - [vite](vite.md)
+  
 - [webpack](webpack.md)
 
 ## 数据库~
@@ -48,4 +59,8 @@
 - [http](http.md)
 
 - [面试](八股文面试.md)
+
+
+## 静态部署自己的博客
+- [vercel](静态部署.md)
 

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3190f696","path":"/node/package.json.html","title":"package.json\u548Cpackage-lock.json","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"node/package.json.md"}');export{e as data};

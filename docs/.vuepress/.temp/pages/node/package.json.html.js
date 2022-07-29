@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-3190f696\",\"path\":\"/node/package.json.html\",\"title\":\"package.json和package-lock.json\",\"lang\":\"en-US\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"node/package.json.md\"}")

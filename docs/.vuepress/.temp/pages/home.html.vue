@@ -29,6 +29,9 @@
 <li>
 <p><RouterLink to="/js/ES6/">ES6+</RouterLink></p>
 </li>
+<li>
+<p><a href="">数组重用的方法</a></p>
+</li>
 </ul>
 <h2 id="ts" tabindex="-1"><a class="header-anchor" href="#ts" aria-hidden="true">#</a> TS~</h2>
 <ul>
@@ -45,7 +48,18 @@
 </ul>
 <h2 id="react" tabindex="-1"><a class="header-anchor" href="#react" aria-hidden="true">#</a> React~</h2>
 <ul>
-<li><RouterLink to="/react/mobx.html">Mobx</RouterLink></li>
+<li>
+<p><RouterLink to="/react/mobx.html">Mobx</RouterLink></p>
+</li>
+<li>
+<p><RouterLink to="/react/react%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html">组件</RouterLink></p>
+</li>
+<li>
+<p><RouterLink to="/react/hooks.html">hooks</RouterLink></p>
+</li>
+<li>
+<p><RouterLink to="/react/%E8%B7%AF%E7%94%B1.html">路由</RouterLink></p>
+</li>
 </ul>
 <h2 id="nodejs" tabindex="-1"><a class="header-anchor" href="#nodejs" aria-hidden="true">#</a> nodeJS~</h2>
 <ul>
@@ -58,11 +72,18 @@
 <li>
 <p><RouterLink to="/node/koa.html">koa</RouterLink></p>
 </li>
+<li>
+<p><RouterLink to="/node/package.json.html">package.json和package-lock.json</RouterLink></p>
+</li>
 </ul>
 <h2 id="构建工具" tabindex="-1"><a class="header-anchor" href="#构建工具" aria-hidden="true">#</a> 构建工具~</h2>
 <ul>
-<li><RouterLink to="/vite.html">vite</RouterLink></li>
-<li><RouterLink to="/webpack.html">webpack</RouterLink></li>
+<li>
+<p><RouterLink to="/vite.html">vite</RouterLink></p>
+</li>
+<li>
+<p><RouterLink to="/webpack.html">webpack</RouterLink></p>
+</li>
 </ul>
 <h2 id="数据库" tabindex="-1"><a class="header-anchor" href="#数据库" aria-hidden="true">#</a> 数据库~</h2>
 <ul>
@@ -76,5 +97,9 @@
 <li>
 <p><RouterLink to="/%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95.html">面试</RouterLink></p>
 </li>
+</ul>
+<h2 id="静态部署自己的博客" tabindex="-1"><a class="header-anchor" href="#静态部署自己的博客" aria-hidden="true">#</a> 静态部署自己的博客</h2>
+<ul>
+<li><RouterLink to="/%E9%9D%99%E6%80%81%E9%83%A8%E7%BD%B2.html">vercel</RouterLink></li>
 </ul>
 </div></template>

@@ -15,6 +15,8 @@ export const pagesData = {
   "v-62483f05": () => import(/* webpackChunkName: "v-62483f05" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/webpack.html.js").then(({ data }) => data),
   // path: /%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95.html
   "v-da6e3782": () => import(/* webpackChunkName: "v-da6e3782" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/八股文面试.html.js").then(({ data }) => data),
+  // path: /%E9%9D%99%E6%80%81%E9%83%A8%E7%BD%B2.html
+  "v-19d2ec67": () => import(/* webpackChunkName: "v-19d2ec67" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/静态部署.html.js").then(({ data }) => data),
   // path: /canvas/canvas%E5%9F%BA%E7%A1%80.html
   "v-acfd2baa": () => import(/* webpackChunkName: "v-acfd2baa" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/canvas/canvas基础.html.js").then(({ data }) => data),
   // path: /css/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html
@@ -45,8 +47,16 @@ export const pagesData = {
   "v-2668f2e0": () => import(/* webpackChunkName: "v-2668f2e0" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/node/koa.html.js").then(({ data }) => data),
   // path: /node/node.html
   "v-62c92783": () => import(/* webpackChunkName: "v-62c92783" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/node/node.html.js").then(({ data }) => data),
+  // path: /node/package.json.html
+  "v-3190f696": () => import(/* webpackChunkName: "v-3190f696" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/node/package.json.html.js").then(({ data }) => data),
+  // path: /react/hooks.html
+  "v-2e4c22b2": () => import(/* webpackChunkName: "v-2e4c22b2" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/hooks.html.js").then(({ data }) => data),
   // path: /react/mobx.html
   "v-43744c90": () => import(/* webpackChunkName: "v-43744c90" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/mobx.html.js").then(({ data }) => data),
+  // path: /react/react%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html
+  "v-a531d592": () => import(/* webpackChunkName: "v-a531d592" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/react组件通信.html.js").then(({ data }) => data),
+  // path: /react/%E8%B7%AF%E7%94%B1.html
+  "v-f5813ea6": () => import(/* webpackChunkName: "v-f5813ea6" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/路由.html.js").then(({ data }) => data),
   // path: /sql/sql.html
   "v-57d98465": () => import(/* webpackChunkName: "v-57d98465" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/sql/sql.html.js").then(({ data }) => data),
   // path: /vue/pinia.html

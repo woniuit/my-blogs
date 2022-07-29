@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-a531d592\",\"path\":\"/react/react%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html\",\"title\":\"组件通信\",\"lang\":\"en-US\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"react/react组件通信.md\"}")
