@@ -39,14 +39,14 @@ export const pagesData = {
   "v-4b3e65a8": () => import(/* webpackChunkName: "v-4b3e65a8" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/js/防抖和节流.html.js").then(({ data }) => data),
   // path: /js/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html
   "v-43a0dbc3": () => import(/* webpackChunkName: "v-43a0dbc3" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/js/面向对象.html.js").then(({ data }) => data),
+  // path: /react/mobx.html
+  "v-43744c90": () => import(/* webpackChunkName: "v-43744c90" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/react/mobx.html.js").then(({ data }) => data),
   // path: /node/express.html
   "v-525bec7d": () => import(/* webpackChunkName: "v-525bec7d" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/node/express.html.js").then(({ data }) => data),
   // path: /node/koa.html
   "v-2668f2e0": () => import(/* webpackChunkName: "v-2668f2e0" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/node/koa.html.js").then(({ data }) => data),
   // path: /node/node.html
   "v-62c92783": () => import(/* webpackChunkName: "v-62c92783" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/node/node.html.js").then(({ data }) => data),
-  // path: /react/mobx.html
-  "v-43744c90": () => import(/* webpackChunkName: "v-43744c90" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/react/mobx.html.js").then(({ data }) => data),
   // path: /sql/sql.html
   "v-57d98465": () => import(/* webpackChunkName: "v-57d98465" */"D:/项目/vuepress-starter/docs/.vuepress/.temp/pages/sql/sql.html.js").then(({ data }) => data),
   // path: /vue/pinia.html
