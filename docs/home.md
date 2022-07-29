@@ -30,9 +30,9 @@
 - [pinia](vue/pinia.md)
 
 ## React~
-- [Mobx](react/mobx.md)
+- [jsx](react/jsx.md)
   
-- [组件](react/react组件通信.md)
+- [Mobx](react/mobx.md)
   
 - [hooks](react/hooks.md)
   

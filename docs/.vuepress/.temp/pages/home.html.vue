@@ -49,10 +49,10 @@
 <h2 id="react" tabindex="-1"><a class="header-anchor" href="#react" aria-hidden="true">#</a> React~</h2>
 <ul>
 <li>
-<p><RouterLink to="/react/mobx.html">Mobx</RouterLink></p>
+<p><RouterLink to="/react/jsx.html">jsx</RouterLink></p>
 </li>
 <li>
-<p><RouterLink to="/react/react%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html">组件</RouterLink></p>
+<p><RouterLink to="/react/mobx.html">Mobx</RouterLink></p>
 </li>
 <li>
 <p><RouterLink to="/react/hooks.html">hooks</RouterLink></p>
