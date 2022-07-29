@@ -27,6 +27,7 @@ export const pagesRoutes = [
   ["v-2e4c22b2","/react/hooks.html",{"title":"hooks"},["/react/hooks","/react/hooks.md"]],
   ["v-3488e09a","/react/jsx.html",{"title":"react-jsx"},["/react/jsx","/react/jsx.md"]],
   ["v-43744c90","/react/mobx.html",{"title":""},["/react/mobx","/react/mobx.md"]],
+  ["v-4f23343b","/react/%E7%BB%84%E4%BB%B6.html",{"title":"组件"},["/react/组件.html","/react/%E7%BB%84%E4%BB%B6","/react/组件.md","/react/%E7%BB%84%E4%BB%B6.md"]],
   ["v-f5813ea6","/react/%E8%B7%AF%E7%94%B1.html",{"title":"路由"},["/react/路由.html","/react/%E8%B7%AF%E7%94%B1","/react/路由.md","/react/%E8%B7%AF%E7%94%B1.md"]],
   ["v-57d98465","/sql/sql.html",{"title":"sql"},["/sql/sql","/sql/sql.md"]],
   ["v-6357b2ee","/vue/pinia.html",{"title":""},["/vue/pinia","/vue/pinia.md"]],

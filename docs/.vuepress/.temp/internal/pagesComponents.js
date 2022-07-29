@@ -57,6 +57,8 @@ export const pagesComponents = {
   "v-3488e09a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3488e09a" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/jsx.html.vue")),
   // path: /react/mobx.html
   "v-43744c90": defineAsyncComponent(() => import(/* webpackChunkName: "v-43744c90" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/mobx.html.vue")),
+  // path: /react/%E7%BB%84%E4%BB%B6.html
+  "v-4f23343b": defineAsyncComponent(() => import(/* webpackChunkName: "v-4f23343b" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/组件.html.vue")),
   // path: /react/%E8%B7%AF%E7%94%B1.html
   "v-f5813ea6": defineAsyncComponent(() => import(/* webpackChunkName: "v-f5813ea6" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/路由.html.vue")),
   // path: /sql/sql.html

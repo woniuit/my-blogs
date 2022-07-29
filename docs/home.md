@@ -31,10 +31,12 @@
 
 ## React~
 - [jsx](react/jsx.md)
+
+- [组件](react/组件.md)
+
+- [hooks](react/hooks.md)
   
 - [Mobx](react/mobx.md)
-  
-- [hooks](react/hooks.md)
   
 - [路由](react/路由.md)
 

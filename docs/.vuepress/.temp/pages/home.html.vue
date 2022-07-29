@@ -52,10 +52,13 @@
 <p><RouterLink to="/react/jsx.html">jsx</RouterLink></p>
 </li>
 <li>
-<p><RouterLink to="/react/mobx.html">Mobx</RouterLink></p>
+<p><RouterLink to="/react/%E7%BB%84%E4%BB%B6.html">组件</RouterLink></p>
 </li>
 <li>
 <p><RouterLink to="/react/hooks.html">hooks</RouterLink></p>
+</li>
+<li>
+<p><RouterLink to="/react/mobx.html">Mobx</RouterLink></p>
 </li>
 <li>
 <p><RouterLink to="/react/%E8%B7%AF%E7%94%B1.html">路由</RouterLink></p>
