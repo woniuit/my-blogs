@@ -98,7 +98,7 @@
 <p><RouterLink to="/%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95.html">面试</RouterLink></p>
 </li>
 </ul>
-<h2 id="静态部署自己的博客" tabindex="-1"><a class="header-anchor" href="#静态部署自己的博客" aria-hidden="true">#</a> 静态部署自己的博客</h2>
+<h2 id="静态托管" tabindex="-1"><a class="header-anchor" href="#静态托管" aria-hidden="true">#</a> 静态托管</h2>
 <ul>
 <li><RouterLink to="/%E9%9D%99%E6%80%81%E9%83%A8%E7%BD%B2.html">vercel</RouterLink></li>
 </ul>
