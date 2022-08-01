@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as r,a as e,d as c}from"./app.b7a20b1d.js";const _={},o=e("h1",{id:"\u8DEF\u7531",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#\u8DEF\u7531","aria-hidden":"true"},"#"),c(" \u8DEF\u7531")],-1),s=[o];function n(d,i){return t(),r("div",null,s)}var l=a(_,[["render",n],["__file","\u8DEF\u7531.html.vue"]]);export{l as default};
