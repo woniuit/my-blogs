@@ -55,6 +55,9 @@
 <p><RouterLink to="/react/%E7%BB%84%E4%BB%B6.html">组件</RouterLink></p>
 </li>
 <li>
+<p><RouterLink to="/react/%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html">组件通信</RouterLink></p>
+</li>
+<li>
 <p><RouterLink to="/react/hooks.html">hooks</RouterLink></p>
 </li>
 <li>

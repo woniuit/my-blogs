@@ -33,6 +33,8 @@
 - [jsx](react/jsx.md)
 
 - [组件](react/组件.md)
+  
+- [组件通信](react/组件通信.md)
 
 - [hooks](react/hooks.md)
   

@@ -57,6 +57,8 @@ export const pagesData = {
   "v-43744c90": () => import(/* webpackChunkName: "v-43744c90" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/mobx.html.js").then(({ data }) => data),
   // path: /react/%E7%BB%84%E4%BB%B6.html
   "v-4f23343b": () => import(/* webpackChunkName: "v-4f23343b" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/组件.html.js").then(({ data }) => data),
+  // path: /react/%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html
+  "v-0a9be7b8": () => import(/* webpackChunkName: "v-0a9be7b8" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/组件通信.html.js").then(({ data }) => data),
   // path: /react/%E8%B7%AF%E7%94%B1.html
   "v-f5813ea6": () => import(/* webpackChunkName: "v-f5813ea6" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/react/路由.html.js").then(({ data }) => data),
   // path: /sql/sql.html
