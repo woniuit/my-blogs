@@ -179,3 +179,115 @@ useEffect(()=>{
 },[])
 ```
 
+## useCallback
+
+useCallback实际的目的是为了进行性能的优化。
+
+useCallback最主要用于性能渲染的地方应该是和memo结合起来，决定子组件是否需要重新渲染；
+
+```js
+import React, { memo, useState, useCallback } from 'react';
+
+const CounterIncrement = memo((props) => {
+  console.log("CounterIncrment被渲染:", props.name);
+  return <button onClick={props.increment}>+1</button>
+})
+
+export default function CallbackHookDemo() {
+  const [count, setCount] = useState(0);
+
+  const increment1 = useCallback(function increment() {
+    setCount(count + 1);
+  }, []);
+
+  const increment2 = function() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <h2>当前计数: {count}</h2>
+      {/* <button onClick={increment1}>+1</button>
+      <button onClick={increment2}>+1</button> */}
+      <CounterIncrement increment={increment1} name="increment1"/>
+      <CounterIncrement increment={increment2} name="increment2"/>
+    </div>
+  )
+}
+```
+
+## useMemo
+
+useMemo实际的目的也是为了进行性能的优化。
+
+- 无论我们点击了是 `+1`还是 `切换` 案例都会重新计算一次；
+
+- 事实上，我们只是希望在count发生变化时重新计算；
+
+  ```js
+  import React, { useState, useMemo } from 'react';
+  
+  function calcNum(count) {
+    let total = 0;
+    for (let i = 0; i < count; i++) {
+      total += i;
+    }
+    console.log("计算一遍");
+    return total
+  }
+  
+  export default function MemoHookDemo() {
+    const [count, setCount] = useState(10);
+    const [isLogin, setIsLogin] = useState(true);
+  
+    const total = calcNum(count);
+  
+    return (
+      <div>
+        <h2>数字和: {total}</h2>
+        <button onClick={e => setCount(count + 1)}>+1</button>
+        {isLogin && <h2>Coderwhy</h2>}
+        <button onClick={e => setIsLogin(!isLogin)}>切换</button>
+      </div>
+    )
+  }
+  ```
+
+  这个时候，我们可以使用useMemo来进行性能的优化：
+
+  ```js
+  import React, { useState, useMemo } from 'react';
+  
+  function calcNum(count) {
+    let total = 0;
+    for (let i = 0; i < count; i++) {
+      total += i;
+    }
+    console.log("计算一遍");
+    return total
+  }
+  
+  export default function MemoHookDemo() {
+    const [count, setCount] = useState(10);
+    const [isLogin, setIsLogin] = useState(true);
+  
+    const total = useMemo(() => {
+      return calcNum(count);
+    }, [count]);
+  
+    return (
+      <div>
+        <h2>数字和: {total}</h2>
+        <button onClick={e => setCount(count + 1)}>+1</button>
+        {isLogin && <h2>Coderwhy</h2>}
+        <button onClick={e => setIsLogin(!isLogin)}>切换</button>
+      </div>
+    )
+  }
+  ```
+
+  
+
+## useRef
+
+## 自定义Hook
