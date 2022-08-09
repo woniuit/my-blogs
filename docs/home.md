@@ -2,6 +2,8 @@
 ## css~
 - [css理论概念相关](/css/css学习笔记/)
 
+- [css3](/css/css3.md) 
+
 ## JS~
 - [模块化](/js/Module/)
 
@@ -19,7 +21,9 @@
 
 - [ES6+](/js/ES6/)
 
-- [数组重用的方法]()
+- [数组常用的方法]()
+  
+- [DOM](/js/dom.md)
 
 ## TS~
 - [ts](ts.md)

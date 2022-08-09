@@ -1,4 +1,4 @@
-<template><div><h1 id="ts学习笔记" tabindex="-1"><a class="header-anchor" href="#ts学习笔记" aria-hidden="true">#</a> TS学习笔记</h1>
+<template><div><h1 id="ts" tabindex="-1"><a class="header-anchor" href="#ts" aria-hidden="true">#</a> TS</h1>
 <h2 id="编译环境安装" tabindex="-1"><a class="header-anchor" href="#编译环境安装" aria-hidden="true">#</a> 编译环境安装</h2>
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code>npm install typescript <span class="token operator">-</span>g
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看版本</p>

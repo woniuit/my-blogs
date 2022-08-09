@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-65f630fe","path":"/react/admin%E9%A1%B9%E7%9B%AE.html","title":"\u9879\u76EE","lang":"en-US","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"\u642D\u5EFA","slug":"\u642D\u5EFA","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"react/admin\u9879\u76EE.md"}');export{e as data};
