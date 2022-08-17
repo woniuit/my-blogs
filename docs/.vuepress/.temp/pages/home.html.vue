@@ -53,6 +53,9 @@
 <li>
 <p><RouterLink to="/vue/pinia.html">pinia</RouterLink></p>
 </li>
+<li>
+<p><RouterLink to="/vue/vue3+ts%E9%A1%B9%E7%9B%AE.html">vue3+ts项目</RouterLink></p>
+</li>
 </ul>
 <h2 id="react" tabindex="-1"><a class="header-anchor" href="#react" aria-hidden="true">#</a> React~</h2>
 <ul>

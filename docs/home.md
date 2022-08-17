@@ -32,6 +32,8 @@
 - [Object.defineProperty和Proxy](vue/响应式原理.md)
 
 - [pinia](vue/pinia.md)
+  
+- [vue3+ts项目](vue/vue3+ts项目.md)
 
 ## React~
 - [jsx](react/jsx.md)

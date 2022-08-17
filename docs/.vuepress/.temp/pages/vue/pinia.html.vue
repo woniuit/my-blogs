@@ -119,8 +119,41 @@ store<span class="token punctuation">.</span><span class="token function">$reset
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="模块化" tabindex="-1"><a class="header-anchor" href="#模块化" aria-hidden="true">#</a> 模块化</h2>
-<p>我个人感觉pinia的模块化就是一个模块创建一个文件夹~~然后再引入那个文件夹就行了。</p>
-<h2 id="在router-js中使用" tabindex="-1"><a class="header-anchor" href="#在router-js中使用" aria-hidden="true">#</a> 在router.js中使用</h2>
+<p>在store文件夹中创建modules文件夹</p>
+<p><strong>index.js</strong></p>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createPinia <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useAppStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./modules/app'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> useAppStore<span class="token punctuation">,</span> useUserStore <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> pinia<span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>modules/app.js</strong></p>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defineStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'pinia'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> piniaStore <span class="token keyword">from</span> <span class="token string">'/@/store/index'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> useAppStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span>
+  <span class="token comment">// 唯一ID</span>
+  <span class="token string">'app'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token function-variable function">state</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+      
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">persist</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">useAppOutsideStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">useAppStore</span><span class="token punctuation">(</span>piniaStore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>使用</strong></p>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code>  <span class="token keyword">import</span> <span class="token punctuation">{</span> useAppStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'/@/store'</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> appStore <span class="token operator">=</span> <span class="token function">useAppStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="在router-js中使用" tabindex="-1"><a class="header-anchor" href="#在router-js中使用" aria-hidden="true">#</a> 在router.js中使用</h2>
 <p>必须写在router.beforeEach里面。</p>
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code>router<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">to</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
     <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">loginStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>

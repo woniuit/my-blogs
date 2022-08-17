@@ -178,7 +178,54 @@ export const useSettingsStore = defineStore('settings', {
 
 ## 模块化
 
-我个人感觉pinia的模块化就是一个模块创建一个文件夹~~然后再引入那个文件夹就行了。
+在store文件夹中创建modules文件夹
+
+**index.js**
+
+```js
+import { createPinia } from 'pinia';
+import { useAppStore } from './modules/app';
+export { useAppStore, useUserStore };
+export default pinia;
+```
+
+**modules/app.js**
+
+```js
+import { defineStore } from 'pinia';
+import piniaStore from '/@/store/index';
+
+export const useAppStore = defineStore(
+  // 唯一ID
+  'app',
+  {
+    state: () => ({
+      
+    }),
+    getters: {},
+    actions: {
+      
+    },
+    persist: {
+      
+    },
+  },
+);
+
+export function useAppOutsideStore() {
+  return useAppStore(piniaStore);
+}
+
+```
+
+**使用**
+
+```js
+  import { useAppStore } from '/@/store';
+  const appStore = useAppStore();
+```
+
+
 
 ## 在router.js中使用
 
