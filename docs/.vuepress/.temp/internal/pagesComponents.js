@@ -77,6 +77,8 @@ export const pagesComponents = {
   "v-8f051e68": defineAsyncComponent(() => import(/* webpackChunkName: "v-8f051e68" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/vue/vue3+ts项目.html.vue")),
   // path: /vue/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86.html
   "v-ec46784c": defineAsyncComponent(() => import(/* webpackChunkName: "v-ec46784c" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/vue/响应式原理.html.vue")),
+  // path: /vue/%E8%A1%A8%E5%8D%95%E5%B0%81%E8%A3%85.html
+  "v-94480d64": defineAsyncComponent(() => import(/* webpackChunkName: "v-94480d64" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/vue/表单封装.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"D:/项目/my-blogs/docs/.vuepress/.temp/pages/404.html.vue")),
 }

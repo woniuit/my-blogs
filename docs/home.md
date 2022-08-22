@@ -34,6 +34,8 @@
 - [pinia](vue/pinia.md)
   
 - [vue3+ts项目](vue/vue3+ts项目.md)
+  
+- [表单组件](vue/表单封装.md)
 
 ## React~
 - [jsx](react/jsx.md)

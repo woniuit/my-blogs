@@ -56,6 +56,9 @@
 <li>
 <p><RouterLink to="/vue/vue3+ts%E9%A1%B9%E7%9B%AE.html">vue3+ts项目</RouterLink></p>
 </li>
+<li>
+<p><RouterLink to="/vue/%E8%A1%A8%E5%8D%95%E5%B0%81%E8%A3%85.html">表单组件</RouterLink></p>
+</li>
 </ul>
 <h2 id="react" tabindex="-1"><a class="header-anchor" href="#react" aria-hidden="true">#</a> React~</h2>
 <ul>

@@ -183,39 +183,22 @@ export const useSettingsStore = defineStore('settings', {
 **index.js**
 
 ```js
-import { createPinia } from 'pinia';
 import { useAppStore } from './modules/app';
 export { useAppStore, useUserStore };
-export default pinia;
 ```
 
 **modules/app.js**
 
 ```js
-import { defineStore } from 'pinia';
-import piniaStore from '/@/store/index';
-
-export const useAppStore = defineStore(
-  // 唯一ID
-  'app',
-  {
-    state: () => ({
-      
-    }),
-    getters: {},
-    actions: {
-      
+import { defineStore } from 'pinia'
+export const loginStore = defineStore('main', {
+    state:() => {
+        return {
+            token: "",
+            menulist: [], //左侧菜单
+        };
     },
-    persist: {
-      
-    },
-  },
-);
-
-export function useAppOutsideStore() {
-  return useAppStore(piniaStore);
-}
-
+})
 ```
 
 **使用**

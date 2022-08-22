@@ -37,5 +37,6 @@ export const pagesRoutes = [
   ["v-6357b2ee","/vue/pinia.html",{"title":""},["/vue/pinia","/vue/pinia.md"]],
   ["v-8f051e68","/vue/vue3+ts%E9%A1%B9%E7%9B%AE.html",{"title":"vue3-admin-ts"},["/vue/vue3+ts项目.html","/vue/vue3+ts%E9%A1%B9%E7%9B%AE","/vue/vue3+ts项目.md","/vue/vue3+ts%E9%A1%B9%E7%9B%AE.md"]],
   ["v-ec46784c","/vue/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86.html",{"title":""},["/vue/响应式原理.html","/vue/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86","/vue/响应式原理.md","/vue/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86.md"]],
+  ["v-94480d64","/vue/%E8%A1%A8%E5%8D%95%E5%B0%81%E8%A3%85.html",{"title":"vue3+elementplus表单封装"},["/vue/表单封装.html","/vue/%E8%A1%A8%E5%8D%95%E5%B0%81%E8%A3%85","/vue/表单封装.md","/vue/%E8%A1%A8%E5%8D%95%E5%B0%81%E8%A3%85.md"]],
   ["v-3706649a","/404.html",{"title":""},["/404"]],
 ]
