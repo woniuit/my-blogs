@@ -95,6 +95,9 @@
 <li>
 <p><RouterLink to="/node/package.json.html">package.json和package-lock.json</RouterLink></p>
 </li>
+<li>
+<p><RouterLink to="/sql/sql.html">mongoDB</RouterLink></p>
+</li>
 </ul>
 <h2 id="构建工具" tabindex="-1"><a class="header-anchor" href="#构建工具" aria-hidden="true">#</a> 构建工具~</h2>
 <ul>
@@ -104,10 +107,6 @@
 <li>
 <p><RouterLink to="/webpack.html">webpack</RouterLink></p>
 </li>
-</ul>
-<h2 id="数据库" tabindex="-1"><a class="header-anchor" href="#数据库" aria-hidden="true">#</a> 数据库~</h2>
-<ul>
-<li><RouterLink to="/sql/sql.html">数据库</RouterLink></li>
 </ul>
 <h2 id="计算机网络相关" tabindex="-1"><a class="header-anchor" href="#计算机网络相关" aria-hidden="true">#</a> 计算机网络相关~</h2>
 <ul>

@@ -1,5 +1,47 @@
 <template><div><h1 id="sql" tabindex="-1"><a class="header-anchor" href="#sql" aria-hidden="true">#</a> sql</h1>
-<h2 id="常见的数据库" tabindex="-1"><a class="header-anchor" href="#常见的数据库" aria-hidden="true">#</a> 常见的数据库</h2>
+<h2 id="mongodb" tabindex="-1"><a class="header-anchor" href="#mongodb" aria-hidden="true">#</a> MongoDB</h2>
+<p><strong><a href="https://yangyongli.blog.csdn.net/article/details/113917773?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-113917773-blog-114709588.t5_layer_eslanding_A_4&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-113917773-blog-114709588.t5_layer_eslanding_A_4&amp;utm_relevant_index=2" target="_blank" rel="noopener noreferrer">安装<ExternalLinkIcon/></a></strong></p>
+<h3 id="常用的语句" tabindex="-1"><a class="header-anchor" href="#常用的语句" aria-hidden="true">#</a> <strong>常用的语句</strong></h3>
+<p><strong>查看当前数据库列表</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>show dbs
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查看当前操作的数据库</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>切换数据库（如果没有这个数据库 会 创建数据库）</strong></p>
+<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>use 数据库名称
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>如果真的想把这个数据库创建成功，那么必须插入一个数据。 数据库中不能直接插入数据，只能往<a href="https://so.csdn.net/so/search?q=%E9%9B%86%E5%90%88&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">集合<ExternalLinkIcon/></a>(collections)中插入数据。
+下面命令表示给 itying 数据库的 user 表中插入数据。</p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.insert({&quot;name&quot;:&quot;xiaoming&quot;});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>显示当前的数据集合</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>show collections
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>删除指定的集合 删除表</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.drop();
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>删除当前所在的数据库</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.dropDatabase();
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>插入（增加）数据</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.表名.insert({&quot;name&quot;:&quot;zhangsan&quot;，&quot;age&quot;:20});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询所有记录</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find();
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 age = 22 的记录</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;age&quot;: 22});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 age &gt; 22 的记录</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;age&quot;: {$gt: 22}});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 age &lt; 22 的记录</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;age&quot;: {$lt: 22}});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 age &gt;= 25 的记录</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;age&quot;: {$gte: 25}});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 age &lt;= 25 的记录</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;age&quot;: {$lte: 25}});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 age &gt;= 23 并且 age &lt;= 26</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;age&quot;: {$gte: 23, $lte: 26}});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 name 中包含 mongo 的数据 模糊查询用于搜索</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;name&quot;: /mongo/});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 name 中以 mongo 开头的</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;name&quot;: /^mongo/});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>查询 name 中以 mongo 结尾的</strong></p>
+<div class="language-mysql ext-mysql line-numbers-mode"><pre v-pre class="language-mysql"><code>db.user.find({&quot;name&quot;: /mongo$/});
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><a href="https://blog.csdn.net/ZYS10000/article/details/116425819" target="_blank" rel="noopener noreferrer">更多语句<ExternalLinkIcon/></a></p>
+<h2 id="mysql" tabindex="-1"><a class="header-anchor" href="#mysql" aria-hidden="true">#</a> mysql</h2>
+<h3 id="常见的数据库" tabindex="-1"><a class="header-anchor" href="#常见的数据库" aria-hidden="true">#</a> 常见的数据库</h3>
 <p>通常将数据划分成两类：关系型数据库和非关系型数据库。</p>
 <p>关系型数据库：MySQL、Oracle、DB2、SQL Server、Postgre SQL等</p>
 <ul>
@@ -20,10 +62,10 @@
 <li>目前在公司进行后端开发（Node、Java、Go等），还是以关系型数据库为主</li>
 <li>比较常用的用到非关系型数据库的，在爬取大量的数据进行存储时，会比较常见；</li>
 </ul>
-<h2 id="gut工具" tabindex="-1"><a class="header-anchor" href="#gut工具" aria-hidden="true">#</a> Gut工具</h2>
+<h3 id="gut工具" tabindex="-1"><a class="header-anchor" href="#gut工具" aria-hidden="true">#</a> Gut工具</h3>
 <p>Navicat</p>
-<h2 id="数据库的操作" tabindex="-1"><a class="header-anchor" href="#数据库的操作" aria-hidden="true">#</a> 数据库的操作</h2>
-<h3 id="查看当前数据库" tabindex="-1"><a class="header-anchor" href="#查看当前数据库" aria-hidden="true">#</a> 查看当前数据库</h3>
+<h3 id="mysql的操作" tabindex="-1"><a class="header-anchor" href="#mysql的操作" aria-hidden="true">#</a> mysql的操作</h3>
+<p><strong>查看当前数据库</strong></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token comment">#查看所有的数据库</span>
 <span class="token keyword">SHOW</span> <span class="token keyword">DATABASES</span>
 
@@ -32,22 +74,22 @@
 
 <span class="token comment"># 查看当前正在使用的数据库</span>
 <span class="token keyword">SELECT</span> <span class="token keyword">DATABASE</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="创建新的数据库" tabindex="-1"><a class="header-anchor" href="#创建新的数据库" aria-hidden="true">#</a> 创建新的数据库</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>创建新的数据库</strong></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token comment"># 创建数据库语句</span>
 <span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> <span class="token keyword">IF</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span> bilibili<span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="删除数据库" tabindex="-1"><a class="header-anchor" href="#删除数据库" aria-hidden="true">#</a> 删除数据库</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>删除数据库</strong></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token comment"># 删除数据库</span>
 <span class="token keyword">DROP</span> <span class="token keyword">DATABASE</span> <span class="token keyword">IF</span> <span class="token keyword">EXIT</span> bilibili<span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="修改数据库" tabindex="-1"><a class="header-anchor" href="#修改数据库" aria-hidden="true">#</a> 修改数据库</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>修改数据库</strong></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token comment"># 修改数据库的字符集和排序规则</span>
 <span class="token keyword">ALTER</span> <span class="token keyword">DATABASE</span> bilibili <span class="token keyword">CHARACTER</span> <span class="token keyword">SET</span> <span class="token operator">=</span> utf8 <span class="token keyword">COLLATE</span> <span class="token operator">=</span> utf8_unicode_ci<span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="数据库表的操作" tabindex="-1"><a class="header-anchor" href="#数据库表的操作" aria-hidden="true">#</a> 数据库表的操作</h2>
-<h3 id="查看数据表" tabindex="-1"><a class="header-anchor" href="#查看数据表" aria-hidden="true">#</a> 查看数据表</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="数据库表的操作" tabindex="-1"><a class="header-anchor" href="#数据库表的操作" aria-hidden="true">#</a> 数据库表的操作</h3>
+<p><strong>查看数据表</strong></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token comment"># 查看所有的数据表</span>
 <span class="token keyword">SHOW</span> <span class="token keyword">TABLES</span><span class="token punctuation">;</span>
 <span class="token comment"># 查看某一个表结构</span>
 <span class="token keyword">DESC</span> <span class="token keyword">user</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="创建数据表" tabindex="-1"><a class="header-anchor" href="#创建数据表" aria-hidden="true">#</a> 创建数据表</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>创建数据表</strong></p>
 <div class="language-sql ext-sql line-numbers-mode"><pre v-pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span> <span class="token identifier"><span class="token punctuation">`</span>users<span class="token punctuation">`</span></span><span class="token punctuation">(</span>
 name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
 age <span class="token keyword">INT</span><span class="token punctuation">,</span>
