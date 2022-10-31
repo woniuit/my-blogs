@@ -1,3 +1,8 @@
+---
+sidebar: auto
+
+
+---
 # koa
 
 ## 安装

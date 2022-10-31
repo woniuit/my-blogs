@@ -1,3 +1,8 @@
+---
+sidebar: auto
+
+
+---
 # sql
 
 ## MongoDB
@@ -116,6 +121,52 @@ db.user.find({"name": /mongo$/});
 ```
 
 [更多语句](https://blog.csdn.net/ZYS10000/article/details/116425819)
+
+### mongoose
+
+**安装**
+
+```
+npm install mongoose --save
+```
+
+```js
+const mongoose = require("mongoose");
+async function main() {
+    await mongoose.connect("mongodb://localhost:27017/test");
+}
+main()
+    .then((res) => {
+        console.log("连接成功", res);
+    })
+    .catch((err) => {
+        console.log("连接失败", err);
+    });
+
+const cc = new mongoose.Schema({
+    name: {
+        type: String,
+        require:true
+    },
+    age: {
+        type: Number,
+        require:true
+    }
+});
+const modelName = mongoose.model('djyTest', cc);
+modelName.create({
+    name:"学习完成1",
+    age:20
+},function (err) {
+    if (!err){
+        console.log('插入成功')
+    }else {
+        console.log('失败')
+    }
+ 
+})
+
+```
 
 ## mysql
 

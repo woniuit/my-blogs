@@ -59,6 +59,77 @@ app.listen(port, () => {
 })
 ```
 
+**express增删查改**
+
+**操作json文件**
+
+json
+
+```js
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "Monica",
+        "age": 18
+      },
+      {
+        "id": 2,
+        "username": "卡卡",
+        "age": 12
+      },
+      {
+        "username": "卡卡",
+        "age": 60,
+        "id": 3
+      },
+      {
+        "username": "Monica",
+        "age": 120,
+        "id": 4
+      }
+    ],
+    "video": []
+  }
+```
+
+读取文件
+
+```js
+const express = require("express");
+const fs = require("fs"); //文件模块
+const { promisify } = require("util"); //promise方法
+const app = express();
+const port = 3000;
+
+const readFile = promisify(fs.readFile);
+const writeFile = promisify(fs.writeFile);
+
+getDb = async () => {
+    let data = await readFile("./db.json", "utf8");
+    return JSON.parse(data);
+};
+
+serveDb = async (data) => {
+    let stringData = JSON.stringify(data);
+    return await writeFile("./db.json", stringData);
+};
+
+app.get("/", async (req, res) => {
+    try {
+        const ss = await getDb();
+        res.send(ss);
+    } catch(error) {
+        res.status(500).json({ error })
+    }
+});
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+});
+```
+
+
+
 ### 中间件
 
 中间件的本质是传递给express的一个回调函数；这个回调函数接受三个参数：请求对象（request对象）;响应对象（response对象）;next函数（在express中定义的用于执行下一个中间件的函数）
@@ -362,4 +433,8 @@ app.listen(8000, () => {
 });
 
 ```
+
+### 项目
+
+[代码地址](https://gitee.com/dengjunyu/express-project.git)
 
